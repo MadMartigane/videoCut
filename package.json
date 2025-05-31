@@ -1,0 +1,25 @@
+{
+  "name": "videoCut",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Tool to cut your videos and prepare your rush for video editing.",
+  "main": "main.js",
+  "scripts": {
+    "build": "tsc --outDir ./dist",
+    "watch": "tsc --outDir ./dist -w",
+    "dev": "node --loader ts-node/esm ./src/index.ts",
+    "start": "node --loader ts-node/esm ./src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.9.0",
+  "dependencies": {
+    "@types/node": "^22.15.29",
+    "dotenv": "^16.5.0",
+    "fluent-ffmpeg": "^2.1.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
